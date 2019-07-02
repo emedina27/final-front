@@ -1,4 +1,4 @@
-class CreateStockSales < ActiveRecord::Migration[6.0]
+class CreateStockSales < ActiveRecord::Migration[5.2]
   def change
     create_table :stock_sales do |t|
       t.references :stock, null: false, foreign_key: true

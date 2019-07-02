@@ -17,7 +17,6 @@ class AuthenticateCustomer
   def customer
     if(email == 'anon@anon.com')
       return customer = Customer.find_by_email('anon@anon.com')
-    
     else
       customer = Customer.find_by_email(email)
       return customer if customer && customer.authenticate(password)

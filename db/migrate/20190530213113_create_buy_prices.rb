@@ -1,4 +1,4 @@
-class CreateBuyPrices < ActiveRecord::Migration[6.0]
+class CreateBuyPrices < ActiveRecord::Migration[5.2]
   def change
     create_table :buy_prices do |t|
       t.integer :pennies

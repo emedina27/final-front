@@ -1,4 +1,4 @@
-class CreateCashAccounts < ActiveRecord::Migration[6.0]
+class CreateCashAccounts < ActiveRecord::Migration[5.2]
   def change
     create_table :cash_accounts do |t|
       t.string :cash_account_transaction

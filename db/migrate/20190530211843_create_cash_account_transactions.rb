@@ -1,4 +1,4 @@
-class CreateCashAccountTransactions < ActiveRecord::Migration[6.0]
+class CreateCashAccountTransactions < ActiveRecord::Migration[5.2]
   def change
     create_table :cash_account_transactions do |t|
       t.integer :pennies_withdrawl

@@ -6,9 +6,9 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+City.destroy_all
 Customer.destroy_all
 State.destroy_all
-City.destroy_all
 ZipCode.destroy_all
 CashAccount.destroy_all
 Stock.destroy_all
@@ -49,7 +49,7 @@ BuyPrice.destroy_all
     state:                state)
 
   #assign City to the ZipCode 
-  zipcode.cities_id = city.id
+  zipcode.city_id = city.id
   zipcode.save
 
   #create Customer with personal info and city

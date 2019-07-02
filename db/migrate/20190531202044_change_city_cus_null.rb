@@ -1,4 +1,4 @@
-class ChangeCityCusNull < ActiveRecord::Migration[6.0]
+class ChangeCityCusNull < ActiveRecord::Migration[5.2]
   def change
     change_column :cities, :customers_id, :integer, :null => true
   end
